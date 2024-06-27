@@ -17,14 +17,15 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <label for="" class="control-label">Nome e Cognome</label>
-                        <input class="form-control" type="text" name="name-surname" id="name-surname" placeholder="Inserisci...">
+                        <input class="form-control" type="text" name="name-surname" id="name_surname" placeholder="Inserisci...">
                     </div>
                     <div class="col-12 col-md-3">
                         <label for="" class="control-label">Età</label>
                         <select class="form-select" id="age">
-                            <option value="minorenne">Minorenne</option>
-                            <option value="adulto">Adulto</option>
-                            <option value="old">Over 65</option>
+                            <option value=""></option>
+                            <option value="1">Minorenne</option>
+                            <option value="2">Adulto</option>
+                            <option value="3">Over 65</option>
                           </select>
                     </div>
                     <div class="col-12 col-md-3">
@@ -33,7 +34,7 @@
                     </div>
                     <div class="col-12">
                         <div class="text-end mt-3">
-                            <button id="calc_total_price" class="btn btn-primary">Calcola</button>
+                            <button id="calc_total_price" class="btn btn-primary" type="button">Calcola</button>
                         </div>
                     </div>
                 </div>
@@ -54,9 +55,11 @@
                     </div>
                     <div class="col-12 col-md-2">
                         <h5>Offerta</h5>
+                        <h6 id="offerta"></h6>
                     </div>
                     <div class="col-12 col-md-2">
                         <h5>Carrozza</h5>
+                        <h6 id="carrozza"></h6>
                     </div>
                     <div class="col-12 col-md-2">
                         <h5>Codice CP</h5>
@@ -64,6 +67,9 @@
                     <div class="col-12 col-md-2">
                         <h5>Costo del biglietto</h5>
                         <h6 id="total_price"></h6>
+                    </div>
+                    <div class="col-12">
+                        <h6 id="message" class="text-end mt-3"></h6>
                     </div>
                 </div>
             </div>

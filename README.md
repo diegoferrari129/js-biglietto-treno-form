@@ -52,6 +52,33 @@ MILESTONE 1:
     //MOSTRA IL RISULTATO NELLA CONSOLE DEL BROWSER
     - console.log ( variabile del prezzo finale )
 
+    MILESTONE 2:
+    // CHIEDI ALL'UTENTE NOME E COGNOME
+    - dichiaro una variabile per il nome e cognome = valore aquisito da una terza input
+
+    // MOSTRA IL TIPO DELL'OFFERTA
+    - dichiaro una variabile per l'offerta = testo
+    - recupero l'id del testo
+
+    // GENERA UN NUMERO CAUSALE PER LA CARROZZA
+    - dichiaro una variabile per l'offerta = math.random
+    - assegno il valore della variabile dell'offerta al document
+
+    // GENERA UN NUMERO CASUALE PER IL CODICE CP
+    - dichiaro una variabile per la carrozza = math.random
+    - assegno il valore della variabile dell'offerta al document
+
+// CREA UN BOTTONE PER ELIMINARE I CAMPI DI INPUT
+- recupero l'id del bottone
+- assegno la funzione eventlistener
+    - recupero gli id dei campi input e assegno il valore ''
+    - assegno il valore '' a tutti i tag di testo
+
+
+
+
+
+
 
 
 
