@@ -16,7 +16,6 @@ button.addEventListener('click', function() {
     // APPLICA UNO SCONTO DEL 20% PER I MINORENNI E DEL 40% PER GLI OVER 65
     let message = '';
     let offerta = 'Adulto';
-
     if (age == 1) {
         total_price *= 0.8
         message = 'Hai ricevuto uno sconto del 20% in quanto minorenne'
@@ -27,7 +26,9 @@ button.addEventListener('click', function() {
         message = 'Hai ricevuto uno sconto del 40% in quanto anziano'
         offerta = 'Over 65'
     }
-
+    document.getElementById('message').innerText = message;
+    document.getElementById('offerta').innerText = offerta;
+    
     // MOSTRA NOME E COGNOME
     document.getElementById('passenger').innerText = passenger;
 
@@ -42,8 +43,17 @@ button.addEventListener('click', function() {
     // MOSTRA IL PREZZO SIA NELLA CONSOLE CHE NEL DOCUMENTO
     console.log(total_price);
     document.getElementById('total_price').innerText = total_price.toFixed(2);
-    document.getElementById('message').innerText = message;
-    document.getElementById('offerta').innerText = offerta;
-
 });
 
+const button_delete = document.getElementById('button_delete');
+button_delete.addEventListener('click', function() {
+    document.getElementById('name_surname').value = '';
+    document.getElementById('age').value = '';
+    document.getElementById('distance').value = '';
+    document.getElementById('message').innerText = '';
+    document.getElementById('offerta').innerText = '';
+    document.getElementById('passenger').innerText = '';
+    document.getElementById('carrozza').innerText = '';
+    document.getElementById('codice').innerText = '';
+    document.getElementById('total_price').innerText = '';
+});
