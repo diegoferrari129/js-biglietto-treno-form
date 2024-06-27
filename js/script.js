@@ -30,8 +30,10 @@ button.addEventListener('click', function() {
 
     // MOSTRA NOME E COGNOME
     document.getElementById('passenger').innerText = passenger;
-
     
+    // GENERA UN NUMERO CAUSALE PER LA CARROZZA
+    let carrozza = Math.random() * 10;
+    document.getElementById('carrozza').innerText = carrozza.toFixed(0);
 
     // MOSTRA IL PREZZO SIA NELLA CONSOLE CHE NEL DOCUMENTO
     console.log(total_price);
